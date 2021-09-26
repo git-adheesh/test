@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2F3F7;
+    font-family: 'Montserrat', sans-serif;
+}
+a.navColor
+{
+color: gray;
+font-weight: 700;
+}
+
+.test
+{
+    position: absolute;
+    background-color: transparent;
+    top: 0.8rem;
+    /* left: 0.5rem; */
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(36, 145, 189);
+    /* margin:1rem; */
+}
+
+.midNav
+{
+    margin: 0.8rem;
+}
+
+.smi
+{
+    
+    color: rgb(36, 145, 189);
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+    
+}
+
+
+.ficons
+{
+
+padding: 1rem 19px;
+margin:auto;
+background-color: transparent;
+}
+
+.ticons
+{
+
+padding: 1rem 17px;
+margin:auto;
+background-color: transparent;
+}
+
+.iicons
+{
+
+padding: 1rem 1.1rem;
+margin:auto;
+background-color: transparent;
+}
+.our-products, .upcoming-events, .faq, .features
+{
+    text-align: center;
+    color: rgb(59, 4, 110);
+    margin-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Individual styling of products grid */
+.pgrid
+{
+    margin: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+}
+
+.pname, .evt-name
+{
+color: rgb(63, 0, 100);
+}
+
+.product-price
+{
+    float: right;
+    margin: 0px 10px 0px 10px;
+    color: grey;
+    
+}
+
+.product-brief, .evt-brief
+{
+    color: rgb(100, 99, 99);
+}
+
+/* Individual styling of event grid */
+.egrid
+{
+    margin: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 2rem;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+}
+
+ .evtimg
+{
+    max-width: 100%;
+    
+    border-radius: 2rem;
+}
+
+.evt-name, .evt-brief, .evt-date
+{
+    padding: 0 0.7rem 0 0.7rem;
+}
+
+.evt-date
+{
+    margin: 10px 0px;
+    color: gray;
+}
+
+.feature-overview
+{
+    text-align: center;
+    color: rgb(65, 64, 64);
+    padding: 0 3rem 0 3rem;
+}
+
+.feature-img
+{
+    padding: 5rem 5rem 1.5rem 5rem;
+    text-align: center;
+}
+.feature-name
+{
+    text-align: center;
+}
+.feature-brief
+{
+    padding: 0 1.2rem 0 1.2rem;
+    color: rgb(77, 73, 73);
+    text-align: center;
+}
+
+.faqGrid
+{
+    margin: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.faqQues
+{
+    padding-top: 15px;
+}
+
+.up, .down
+{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+}
+
+
+.faqText
+{
+    margin: 0.8rem;
+    padding: 1.5rem;
+}
+
