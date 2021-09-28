@@ -1,4 +1,4 @@
-const toggles = document.querySelectorAll('.faq-toggle')
+const toggles = document.querySelectorAll('.ques-faq')
 
 toggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
