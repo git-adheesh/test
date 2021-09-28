@@ -8,65 +8,67 @@
 }
 a.navColor
 {
-color: gray;
-font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
 }
 
 .test
-{
-    position: absolute;
+{ 
     background-color: transparent;
-    top: 0.8rem;
-    /* left: 0.5rem; */
+    
     font-size: 26px;
     font-weight: 900;
     color: rgb(36, 145, 189);
-    /* margin:1rem; */
+    
 }
 
-.midNav
+/* bootstrap classes update */
+.nav-item
+{
+    text-align: center;
+}
+
+/* .midNav
 {
     margin: 0.8rem;
+} */
+.nav-margin-manual
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toggle
+{
+    display: none;
+}
+
+.flex-social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .smi
 {
+    border: 0;
+    outline: 0;
     
-    color: rgb(36, 145, 189);
-    display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    margin: 0.5rem;
+    color: rgb(36, 145, 189);   
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: transparent;
+    margin: 0.5rem 1rem;
     border-radius: 50%;
     box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
     
 }
 
 
-.ficons
-{
 
-padding: 1rem 19px;
-margin:auto;
-background-color: transparent;
-}
-
-.ticons
-{
-
-padding: 1rem 17px;
-margin:auto;
-background-color: transparent;
-}
-
-.iicons
-{
-
-padding: 1rem 1.1rem;
-margin:auto;
-background-color: transparent;
-}
-.our-products, .upcoming-events, .faq, .features
+.our-products, .upcoming-events, .faq-head, .features
 {
     text-align: center;
     color: rgb(59, 4, 110);
@@ -75,6 +77,17 @@ background-color: transparent;
     margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+   .responsive-cont {
+      width: 5%;
+    }
+  }
+
+  .pc 
+  {
+     
+      border: 1px solid black;
+  }
 
 /* Individual styling of products grid */
 .pgrid
@@ -86,6 +99,13 @@ background-color: transparent;
     box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
 }
 
+.product-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .pname, .evt-name
 {
 color: rgb(63, 0, 100);
@@ -93,8 +113,8 @@ color: rgb(63, 0, 100);
 
 .product-price
 {
-    float: right;
-    margin: 0px 10px 0px 10px;
+    
+    margin-left: 0.8rem;
     color: grey;
     
 }
@@ -111,12 +131,12 @@ color: rgb(63, 0, 100);
     padding: 0.8rem;
     border-radius: 2rem;
     box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+    margin-bottom: 1.5rem;
 }
 
  .evtimg
 {
     max-width: 100%;
-    
     border-radius: 2rem;
 }
 
@@ -154,40 +174,62 @@ color: rgb(63, 0, 100);
     text-align: center;
 }
 
-.faqGrid
-{
-    margin: 0.8rem;
-    margin-bottom: 1.2rem;
-    padding: 1.5rem;
-    border-radius: 2rem;
-    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+/* faq section css */
+
+
+.ques-faq {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-}
-
-.faqQues
-{
-    padding-top: 15px;
-}
-
-.up, .down
-{
-    display: inline-block;
-    color:  rgb(63, 0, 100);
-    width: 3rem;
-    height: 3rem;
-    margin:1rem;
-    background-color: transparent;
-    padding: 0.7rem 12px;
-    border-radius: 50%;
-    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
-}
-
-
-.faqText
-{
-    margin: 0.8rem;
+    align-items: center;
     padding: 1.5rem;
+    box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* <!-- below are the classes are inline-block  element that is button tag --> */
+ .chevron-btn-up, .chevron-btn-down  
+ {
+     outline: 0;
+     border: 0;
+     margin: 1rem;
+     background-color: transparent;
+     box-shadow: -0.4rem -0.4rem 1rem rgb(255, 255, 255), 0.4rem 0.4rem 1rem #d3d5da;
+     padding: 1rem;
+     /* width: 2.8rem;
+     height: 2.8rem; */
+     border-radius: 50%;
+ }
+
+
+
+ .up, .down
+ {
+    background-color: transparent;
+ }
+
+.faq-ans
+{
+    margin: 3rem 1.5rem;
+    display: none;
 }
 
+.faq.active .faq-ans
+{
+    display: block;
+}
+
+.chevron-btn-up
+{
+display: none;
+}
+
+.faq.active .ques-faq  .chevron-btn-up
+{
+    display: block;
+}
+
+.faq.active .ques-faq  .chevron-btn-down
+{
+    display: none;
+}
